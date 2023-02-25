@@ -1,0 +1,142 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*     STARTING CSS     */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+html {
+    background-color: #eee;
+}
+
+
+
+.navbar {
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #fff;
+    box-shadow: 0 10px 15px rgba(44, 14, 14, 0.1);
+}
+.navbar .navbar-nav .nav-item a {
+    color: #222;
+    font-size: 16px;
+    padding: 10px;
+}
+.navbar .navbar-nav .nav-item a::after {
+    content: "";
+    width: 0%;
+    background: #f57830;
+    height: 2px;
+    display: block;
+    transition: 0.5s;
+}
+.navbar .navbar-nav .nav-item a:hover::after {
+    width: 100%;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+}
+header .container .row h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+
+.products {
+    padding-top: 5%;background-color: #eee;
+    position: relative;
+} 
+.products .container .row .card {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: 350px;
+    border-radius: 10px;
+    transition: 0.6s;
+}
+.products .container .row .card h4 {
+    color: #222;
+    font-size: 20px;
+}
+.products .container .row .card p {
+    color: #222;
+    padding-bottom: 10px;
+}
+.products .container .row .card a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #222;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.products .container .row img {
+    padding: 20px;
+}
+.products .container .row .card:hover {
+    background-color: #f57830;
+    transform: translateY(-3%);
+    transition: 0.6s;
+}
+
+
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: #222;
+    text-align: center;
+    padding-top: 5%;
+}
+footer .container-fluid .row h4 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+footer .container-fluid .row i {
+    padding: 10px;
+    color: #222;
+    background-color: #fff;
+    border-radius: 50px;
+    font-size: 20px;
+    transition: 0.4s;
+    margin-bottom: 30px;
+}
+footer .container-fluid .row i:hover {
+    background-color: #f57830;
+    color: #fff;
+    transition: 0.4s;
+}
+footer .container-fluid .row .signup a {
+    text-decoration: none ;
+    color: #fff;
+    background-color: #f57830;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+footer .container-fluid .row .signup a:hover {
+    color: #222;
+    background-color: #fff;
+    transition: 0.4s;
+}
